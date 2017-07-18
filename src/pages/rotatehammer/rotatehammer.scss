@@ -1,0 +1,24 @@
+page-rotatehammer {
+   .box {
+       margin: 50px 0 0 50px;
+       width: 200px;
+       height: 200px;
+       background-color: #9933ff;
+      // transform: rotate(45deg);
+     //  -ms-transform: rotate(45deg); /* IE 9 */
+      //  -webkit-transform: rotate(45deg); /* Safari and Chrome */
+      //  -o-transform: rotate(45deg); /* Opera */
+     //  -moz-transform: rotate(45deg); /* Firefox */      
+   }
+   .box .label {
+       text-align: center;
+       color: #fff;
+       font-weight: bold;
+       font-size: 16px;
+       padding: 45% 0 0 0;
+   } 
+    .box:hover {
+        cursor: pointer;
+    }
+}
+

@@ -1,0 +1,26 @@
+ 
+<ion-header>
+
+  <ion-navbar>
+    <ion-buttons start>
+       <button ion-button menuToggle text-center>
+         <ion-icon name="menu"></ion-icon>       
+       </button>
+    </ion-buttons>    
+    <ion-title>제스쳐</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+   <div class="swipe-box" *ngFor="let avatar of avatars; let idx=index" (swipeleft)="swipe(idx, $event.type)" (swiperight)="swipe(idx, $event.type)"
+    [class.visible]="avatar.visible" [class.hidden]="!avatar.visible">
+        <div>
+            <img [src]="avatar.image" [alt]="avatar.name">
+        </div>
+        <div>
+            <a class="header">{{avatar.name}}</a>
+        </div>
+    </div>
+</ion-content>

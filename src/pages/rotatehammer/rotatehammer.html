@@ -1,0 +1,24 @@
+ 
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-buttons start>
+       <button ion-button menuToggle text-center>
+         <ion-icon name="menu"></ion-icon>       
+       </button>
+    </ion-buttons>      
+    <ion-title text-center>돌리고</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content fullscreen >
+   
+  <div class="box"
+   rotateCustom  absolute-drag singledoubletap
+    (angleChange)="onRotation($event)"
+     [style.-webkit-transform]="transformStyle">
+     <div class="label">{{title}}</div>
+   </div>  
+</ion-content>

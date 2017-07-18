@@ -1,0 +1,35 @@
+page-uniform {
+.scroll-content {
+    padding-bottom:20px !important; 
+}
+ 
+ ion-grid {
+      background-color: #ccebff;
+ }
+  
+ ion-input {
+     border-bottom: #393B0B solid 1px;
+     color: #1C1C1C;
+     background-color: #e6f5ff;   
+     height: 40px;
+
+ }
+
+ ion-row {
+    height: 42px;
+ }
+
+ion-label {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #0040ff;      
+  }
+
+ button {
+   height: 30px;
+   display: block;
+ }
+
+
+}

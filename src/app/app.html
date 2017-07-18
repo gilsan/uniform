@@ -1,0 +1,55 @@
+<ion-split-pane>
+<ion-menu  side="right"  [content]="nav" side="left">
+    <ion-header>
+        <ion-toolbar color="primary">
+            <ion-title text-center>메뉴</ion-title>
+        </ion-toolbar>
+    </ion-header>
+    <ion-content>
+    <ion-list>
+        <button ion-item icon-left *ngIf="!isLogin">
+            <ion-icon name="log-in"></ion-icon>
+            로그인
+        </button>
+    </ion-list>
+    <ion-list>
+        <button ion-item icon-left *ngIf="isLogin" (click)="onLogOut()">
+            <ion-icon name="log-out"></ion-icon>
+            로그아웃
+        </button>
+    </ion-list> 
+    <ion-list>
+        <button ion-item icon-left *ngIf="isLogin" (click)="onManageImage()">        
+            <ion-icon name="hand"></ion-icon>
+            그림관리
+        </button>
+    </ion-list>    
+    <ion-list>
+        <button ion-item icon-left *ngIf="isLogin" (click)="onCanvas()">
+            <ion-icon name="color-wand"></ion-icon>
+            캔버스
+        </button>
+    </ion-list>
+   <!--
+    <ion-list>
+        <button ion-item icon-left *ngIf="isLogin" (click)="onGesture()">
+            <ion-icon name="hand"></ion-icon>
+            모바일제스쳐
+        </button>
+    </ion-list> 
+    <ion-list>
+        <button ion-item icon-left *ngIf="isLogin" (click)="onRotate()">
+            <ion-icon name="sync"></ion-icon>
+            모바일 돌리고
+        </button>
+    </ion-list>  
+    -->
+ 
+ 
+
+</ion-content>
+</ion-menu>
+
+
+<ion-nav [root]="rootPage"  #nav  main></ion-nav>
+</ion-split-pane>

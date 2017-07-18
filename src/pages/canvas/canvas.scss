@@ -1,0 +1,21 @@
+page-canvas {
+  canvas {
+      width: 100%;
+      height: 100%;
+      display: block;
+  }
+  .scroll-content {
+      overflow: hidden;
+  }
+  #top-toobar {
+      position: absolute;
+      top:0;
+      color: green;
+  }
+  #bottom-toobar {
+      position: absolute;
+      bottom:0;
+      color: blue;
+  }
+    
+}

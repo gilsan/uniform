@@ -1,0 +1,112 @@
+ 
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-buttons start>
+       <button ion-button menuToggle text-center>
+         <ion-icon name="menu"></ion-icon>       
+       </button>
+    </ion-buttons>  
+    <ion-title text-center>치수 등록</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="main-content">
+ <form #f="ngForm" (ngSubmit)="onUniform(f)" > 
+  <ion-grid>
+     <ion-row>
+       <ion-col col-4>
+          <ion-label > 소속</ion-label>
+       </ion-col>
+       <ion-col col-8>
+          <ion-input type="text" ngModel name="depart" ></ion-input>
+       </ion-col>
+     </ion-row>
+     <ion-row>
+       <ion-col col-4>
+          <ion-label >성명</ion-label>
+       </ion-col>
+       <ion-col col-8>
+          <ion-input type="text" ngModel name="name"></ion-input>
+       </ion-col>
+     </ion-row>
+     <ion-row>
+       <ion-col col-4>
+          <ion-label>계급</ion-label>
+       </ion-col>
+       <ion-col col-8>
+          <ion-input type="text" ngModel name="grade"></ion-input>
+       </ion-col>
+     </ion-row>
+     <ion-row>
+       <ion-col col-4>
+          <ion-label>원목</ion-label>
+       </ion-col>
+       <ion-col col-8>
+          <ion-input type="text" ngModel name="neck"></ion-input>
+       </ion-col>
+     </ion-row>
+     <ion-row>
+       <ion-col col-4>
+          <ion-label>가슴</ion-label>
+       </ion-col>
+       <ion-col col-8>
+          <ion-input type="text" ngModel name="breath"></ion-input>
+       </ion-col>
+     </ion-row>
+     <ion-row>
+       <ion-col col-4>
+          <ion-label>어깨</ion-label>
+       </ion-col>
+       <ion-col col-8>
+          <ion-input type="text" ngModel name="sholder"></ion-input>
+       </ion-col>
+     </ion-row>
+     <ion-row>
+       <ion-col col-4>
+          <ion-label>소매</ion-label>
+       </ion-col>
+       <ion-col col-8>
+          <ion-input type="text" ngModel name="wrist"></ion-input>
+       </ion-col>
+     </ion-row>
+     <ion-row>
+       <ion-col col-4>
+          <ion-label>총장</ion-label>
+       </ion-col>
+       <ion-col col-8>
+          <ion-input type="text" ngModel name="reach"></ion-input>
+       </ion-col>
+     </ion-row>
+      <ion-row>
+       <ion-col col-4>
+          <ion-label>허리</ion-label>
+       </ion-col>
+       <ion-col col-8>
+          <ion-input type="text" ngModel name="waist"></ion-input>
+       </ion-col>
+     </ion-row>
+     <ion-row>
+       <ion-col col-4>
+          <ion-label>힢</ion-label>
+       </ion-col>
+       <ion-col col-8>
+          <ion-input type="text" ngModel name="heap"></ion-input>
+       </ion-col>
+     </ion-row>
+     <ion-row>
+       <ion-col col-4>
+          <ion-label>기장</ion-label>
+       </ion-col>
+       <ion-col col-8>
+          <ion-input type="text" ngModel name="gijang"></ion-input>
+       </ion-col>
+     </ion-row>                     
+  </ion-grid>
+  <button ion-button block large>
+    <p class="confirm"> 확 인</p>
+  </button>
+</form>  
+</ion-content>

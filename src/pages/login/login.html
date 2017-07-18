@@ -1,0 +1,36 @@
+ <!--
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-buttons end>
+       <button ion-button menuToggle text-center>
+         <ion-icon name="menu"></ion-icon>
+         로그인
+       </button>
+    </ion-buttons>      
+    
+  </ion-navbar>
+
+</ion-header>
+ --> 
+
+<ion-content class="bg-image no-scroll" padding>
+<form #f="ngForm" (ngSubmit)="onSignin(f)" >
+  <ion-card>     
+    <ion-card-content>
+      <ion-list no-lines>
+        <ion-item>
+          <ion-label floating>
+            <p class="fontcolor">계정</p></ion-label>
+          <ion-input type="text"  ngModel name="name" required placeholder="test"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label floating ><p class="fontcolor">암호</p></ion-label>
+          <ion-input type="password" ngModel name="password" required  placeholder="test"></ion-input>
+        </ion-item>        
+      </ion-list>
+      <button ion-button color="primary" block outline large><p class="fontcolor">확인</p></button>
+    </ion-card-content>
+  </ion-card>
+ </form>
+</ion-content>

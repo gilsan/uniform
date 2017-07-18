@@ -1,0 +1,55 @@
+
+<ion-header>
+   <ion-navbar color="primary">
+    <ion-buttons start>
+       <button ion-button menuToggle text-center>
+         <ion-icon name="menu"></ion-icon>       
+       </button>
+    </ion-buttons>  
+    <ion-title text-center>캔바스</ion-title>
+  </ion-navbar>
+</ion-header>
+   
+<ion-content>
+   
+ <ion-toolbar id="top-toolbar">
+   <ion-slides loop="true" autoplay=5000 slidesPerView=5 zoom=true>
+      <ion-slide>
+         <ion-img src="https://images-na.ssl-images-amazon.com/images/I/51OZU4ySzOL.jpg" style="width:50px; height:50px;" #b  (click)="imageMove(b,10)">
+    </ion-img>
+      </ion-slide>
+  <ion-slide>
+       <ion-img src="assets/img/avatar-luke.png" style="width:50px; height:50px;" #f  (click)="imageMove(f,10)"></ion-img>
+  </ion-slide>
+  <ion-slide>
+      <ion-img src="assets/img/avatar-ts-bopeep.png" style="width:50px; height:50px;" #g (click)="imageMove(g,15)"></ion-img>
+  </ion-slide>
+    <ion-slide>
+       <ion-img src="assets/img/avatar-ts-buzz.png" style="width:50px; height:50px;" #h (click)="imageMove(h,20)"></ion-img>
+    </ion-slide>
+    <ion-slide>
+       <ion-img src="assets/img/avatar-ts-barbie.png"  style="width:50px; height:50px;" #i (click)="imageMove(i,25)"></ion-img>
+    </ion-slide>
+
+   </ion-slides>
+   
+   
+  
+  
+  
+   
+ </ion-toolbar>
+    <!--
+ <canvas #myCanvas id="c" (touchstart)="handleStart($event)" (touchmove)="handleMove($event)"
+  (touchend)="handleEnd($event)"></canvas>
+  <ion-toolbar id="bottom-toolbar"></ion-toolbar>
+-->
+ <canvas #myCanvas id="c" style="border:1px solid #d3d3d3;"></canvas>
+  <ion-toolbar id="bottom-toolbar" style="height:10px;background-color:chartreuse;"></ion-toolbar>
+  
+</ion-content>
+
+
+
+ 
+

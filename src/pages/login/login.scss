@@ -1,0 +1,36 @@
+page-login {
+.bg-image {
+     background-image: url('../assets/img/login.jpg');
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     display: block;  
+ } 
+
+ .no-scroll .scroll-content {
+     overflow: hidden;
+     text-align: center;
+ }
+
+ 
+
+ ion-card.card {
+     background: rgba(232,230,230,0.2px);
+     border-radius: 10px;
+ }
+
+ .item {
+     background: rgba(232,230,230,0px);
+ }
+
+ .fontcolor {
+     color: white;
+     font-size: 20px;
+ }
+
+ ion-input {
+     border-bottom: #ECF6CE solid 1px;
+     color: white;
+ }
+
+}
